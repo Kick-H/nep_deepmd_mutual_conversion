@@ -5,23 +5,23 @@
     The structure of the input directory is as follows:
       Type:1 (has virial)
         deepmd/init.000/
-        ├── set.000
-        │   ├── box.npy
-        │   ├── coord.npy
-        │   ├── energy.npy
-        │   ├── force.npy
-        │   └── virial.npy
-        ├── type.raw
-        └── type_map.raw
+               ├── set.000
+               │   ├── box.npy
+               │   ├── coord.npy
+               │   ├── energy.npy
+               │   ├── force.npy
+               │   └── virial.npy
+               ├── type.raw
+               └── type_map.raw
       Type:2 (no virial)
         deepmd/init.001/
-        ├── set.000
-        │   ├── box.npy
-        │   ├── coord.npy
-        │   ├── energy.npy
-        │   └── force.npy
-        ├── type.raw
-        └── type_map.raw
+               ├── set.000
+               │   ├── box.npy
+               │   ├── coord.npy
+               │   ├── energy.npy
+               │   └── force.npy
+               ├── type.raw
+               └── type_map.raw
     If you have calculated deepmd, then the above file directory should be easy for you to get.
 
 ## deep2nep:
