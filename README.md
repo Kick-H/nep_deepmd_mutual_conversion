@@ -3,25 +3,24 @@
 ## Purpose:
     Convert deepmd input file format to train.in of nep.
     The structure of the input directory is as follows:
-      Type:1 (has virial)
-        deepmd/init.000/
-               ├── set.000
-               │   ├── box.npy
-               │   ├── coord.npy
-               │   ├── energy.npy
-               │   ├── force.npy
-               │   └── virial.npy
-               ├── type.raw
-               └── type_map.raw
-      Type:2 (no virial)
-        deepmd/init.001/
-               ├── set.000
-               │   ├── box.npy
-               │   ├── coord.npy
-               │   ├── energy.npy
-               │   └── force.npy
-               ├── type.raw
-               └── type_map.raw
+    deepmd/
+    ├── init.000    #Type:1 (has virial)
+    │   ├── set.000
+    │   │   ├── box.npy
+    │   │   ├── coord.npy
+    │   │   ├── energy.npy
+    │   │   ├── force.npy
+    │   │   └── virial.npy
+    │   ├── type_map.raw
+    │   └── type.raw
+    └── init.001     # Type:2 (no virial)
+        ├── set.000
+        │   ├── box.npy
+        │   ├── coord.npy
+        │   ├── energy.npy
+        │   └── force.npy
+        ├── type_map.raw
+        └── type.raw
     If you have calculated deepmd, then the above file directory should be easy for you to get.
 
 ## deep2nep:
